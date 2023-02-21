@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilder.GameController">
+    <children>
+        <TextField fx:id="name" layoutX="14.0" layoutY="51.0" prefHeight="35.0" prefWidth="136.0" promptText="Enter your name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="submit" layoutX="153.0" layoutY="51.0" mnemonicParsing="false" onAction="#nameSave" prefHeight="21.0" prefWidth="79.0" text="Submit" textFill="#413b3b" />
+        <Button fx:id="number" layoutX="241.0" layoutY="159.0" mnemonicParsing="false" onAction="#generateNumber" text="Number" textFill="#ce2e2e" />
+        <Circle fx:id="one" fill="DODGERBLUE" layoutX="89.0" layoutY="326.0" onMouseClicked="#pressedOne" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+        <Circle fx:id="two" fill="DODGERBLUE" layoutX="283.0" layoutY="326.0" onMouseClicked="#pressedTwo" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+        <Circle fx:id="three" fill="DODGERBLUE" layoutX="469.0" layoutY="326.0" onMouseClicked="#pressedThree" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="attemp" layoutX="436.0" layoutY="51.0" prefHeight="24.0" prefWidth="128.0" text="Attempts Left: 2" />
+      <Label layoutX="113.0" layoutY="126.0" text="Press the button to Generate the Number!">
+         <font>
+            <Font name="System Bold" size="16.66666603088379" />
+         </font>
+      </Label>
+      <Label fx:id="message" layoutX="67.0" layoutY="207.0" textFill="#821010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
